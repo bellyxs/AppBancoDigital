@@ -1,6 +1,4 @@
-﻿using AppBancoDigital.Services;
-using AppBancoDigital.Views;
-using System;
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -8,13 +6,11 @@ namespace AppBancoDigital
 {
     public partial class App : Application
     {
-
         public App()
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new View.Cadastro());
         }
 
         protected override void OnStart()
