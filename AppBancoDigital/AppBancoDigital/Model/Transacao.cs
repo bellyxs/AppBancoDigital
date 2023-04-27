@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AppBancoDigital.Service
+namespace AppBancoDigital.Model
 {
-    public class DataService
+    internal class Transacao
     {
     }
 }
