@@ -7,28 +7,22 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AppBancoDigital.View
+namespace AppBancoDigital
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Cadastro : ContentPage
+    public partial class MainPage : ContentPage
     {
-        public Cadastro()
+        public MainPage()
         {
             InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, false);
         }
 
-            private void Button_Clicked(object sender, EventArgs e)
+        private void Button_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new View.Cadastro());
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new MainPage());
-        }
-
-        private void dtpck_datanasc_DateSelected(object sender, DateChangedEventArgs e)
         {
 
         }

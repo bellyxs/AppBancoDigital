@@ -1,12 +1,102 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.Cadastro">
+             x:Class="AppBancoDigital.View.Cadastro"
+             BackgroundColor="#45B39D">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="#73C6B6  " Offset="0.3" />
+            <GradientStop Color="#0E6251 " Offset="1.1" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            <Frame CornerRadius="10"
+                   x:Name="frame_cadastro"
+                   BackgroundColor="Transparent"
+                   HasShadow="False"
+                   VerticalOptions="CenterAndExpand" Margin="10,24,10,60">
+
+                <StackLayout>
+
+                    <Label Text="CADASTRO DO CORRENTISTA" 
+                           FontSize="23"
+                           FontAttributes="Bold"
+                           WidthRequest="260"
+                           TextColor="White"
+                           HorizontalTextAlignment="Center" Margin="10,50,10,15"  />
+
+                    <Label Text="INFORME O SEU NOME:" 
+                           TextColor="White"
+                           FontSize="13" 
+                           FontAttributes="Bold"/>
+                    <Entry x:Name="txt_nome"
+                           TextColor="White"
+                            />
+
+                    <Label Text="INFORME O SEU CPF:" 
+                           TextColor="White" 
+                           FontSize="13" 
+                           FontAttributes="Bold"/>
+                    <Entry x:Name="txt_cpf"
+                           TextColor="White"
+                            />
+
+                    <Label Text="INFORME A SUA DATA DE NASCIMENTO:"   
+                           TextColor="White"
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           Margin="0,14,10,0"
+                            />
+                    <DatePicker x:Name="dtpck_datanasc"
+                                            DateSelected="dtpck_datanasc_DateSelected"
+                                            Format="dd/MM/yyyy"
+                                TextColor="White"
+                                FontAttributes="Bold"/>
+
+
+
+                    <Label Text="DEFINA A SUA SENHA:" 
+                           TextColor="White" 
+                           FontSize="13"
+                           FontAttributes="Bold"/>
+                    <Entry x:Name="txt_senha"   
+                           TextColor="White"    />
+
+                    <Label Text="CONFIRME A SUA SENHA:"
+                           TextColor="White" 
+                           FontSize="13"
+                           FontAttributes="Bold"/>
+                    <Entry x:Name="txt_senhaconfirm"   
+                           TextColor="White"  />
+
+                    <Button Text="Finalizar o Cadastro" 
+                            TextColor="White"
+                            BackgroundColor="#148F77"
+                            FontAttributes="Bold"
+                            WidthRequest="300"
+                            Clicked="Button_Clicked" 
+                            BorderColor="Transparent"
+                            CornerRadius="15"
+                            BorderWidth="3" 
+                            Margin="10,30,20,8"/>
+
+                    <Button Text="Voltar" 
+                            TextColor="White"
+                            BackgroundColor="#148F77"
+                            FontAttributes="Bold"
+                            WidthRequest="300"
+                            Clicked="Button_Clicked_1" 
+                            CornerRadius="15"
+                            BorderColor="Transparent"
+                            BorderWidth="3" 
+                            Margin="10,-10,20,10"/>
+                </StackLayout>
+            </Frame>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
