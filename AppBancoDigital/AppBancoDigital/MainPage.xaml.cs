@@ -24,7 +24,7 @@ namespace AppBancoDigital
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new View.Login());
         }
     }
 }
