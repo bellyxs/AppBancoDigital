@@ -40,11 +40,12 @@
                             />
 
                     <Label Text="SENHA:" 
-                           TextColor="White" 
+                           TextColor="White"
                            FontSize="13"
                            FontAttributes="Bold"/>
-                    <Entry x:Name="txt_senha"   
-                           TextColor="White"    />
+                    <Entry x:Name="txt_senha" 
+                           IsPassword="True"
+                           TextColor="White" />
 
                     <Button Text="Entrar" 
                             TextColor="White"
