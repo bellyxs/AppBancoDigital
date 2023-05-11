@@ -17,7 +17,7 @@
         <StackLayout>
 
             <Frame CornerRadius="10"
-                   x:Name="frame_login"
+                   x:Name="form_login"
                    BackgroundColor="Transparent"
                    HasShadow="False"
                    VerticalOptions="CenterAndExpand" Margin="10,24,10,60">
@@ -36,6 +36,14 @@
                            FontSize="13" 
                            FontAttributes="Bold"/>
                     <Entry x:Name="txt_nome"
+                           TextColor="White"
+                            />
+
+                    <Label Text="CPF:" 
+                           TextColor="White"
+                           FontSize="13" 
+                           FontAttributes="Bold"/>
+                    <Entry x:Name="txt_cpf"
                            TextColor="White"
                             />
 

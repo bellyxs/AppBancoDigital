@@ -21,7 +21,7 @@
                    BackgroundColor="Transparent"
                    HorizontalOptions="CenterAndExpand"
                    FontAttributes="Bold"
-                   Margin="10,240,0,0"/>
+                   Margin="10,240,0,25"/>
 
             <Button Text="Abrir Conta"
                     FontSize="Subtitle"
