@@ -2,13 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.MainPage"
-             BackgroundColor="#45B39D">
+             BackgroundColor="#45B39D"
+             >
 
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-            <GradientStop Color="#73C6B6" Offset="0.3" />
-            <GradientStop Color="#0E6251" Offset="0.9" />
-            <GradientStop Color="#0B5345" Offset="1.0" />
+               <GradientStop Color="#A35AF1" Offset="0.2" />
+            <GradientStop Color="#FFAA93" Offset="0.5" />
+            <GradientStop Color="#FF8282" Offset="1.0" /> 
+
 
         </LinearGradientBrush>
     </ContentPage.Background>
@@ -21,18 +23,19 @@
                    BackgroundColor="Transparent"
                    HorizontalOptions="CenterAndExpand"
                    FontAttributes="Bold"
-                   Margin="10,240,0,25"/>
+                   Margin="13,265,0,25"/>
 
             <Button Text="Abrir Conta"
                     FontSize="Subtitle"
-                    BackgroundColor="#148F77"
+                    BackgroundColor="White"
+                    Opacity="0.4"
                     WidthRequest="250"
                     HorizontalOptions="CenterAndExpand"
                     BorderColor="Transparent"
                     FontAttributes="Bold"
                     BorderWidth="2"
                     CornerRadius="15"
-                    TextColor="White"
+                    TextColor="Black"
                     Clicked="Button_Clicked"/>
 
             <Button Text="Entrar"
@@ -40,11 +43,12 @@
                     HorizontalOptions="CenterAndExpand"
                     FontSize="Subtitle"
                     FontAttributes="Bold"
-                    BackgroundColor="#148F77 "
+                    BackgroundColor="White"
+                    Opacity="0.4"
                     CornerRadius="15"
                     BorderColor="Transparent"
                     BorderWidth="2"
-                    TextColor="White"
+                    TextColor="Black"
                     Clicked="Button_Clicked_1"/>
 
         </StackLayout>

@@ -6,10 +6,9 @@
 
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-            <GradientStop Color="#73C6B6" Offset="0.3" />
-            <GradientStop Color="#0E6251" Offset="0.9" />
-            <GradientStop Color="#0B5345" Offset="1.0" />
-
+            <GradientStop Color="#A35AF1" Offset="0.2" />
+            <GradientStop Color="#FFAA93" Offset="0.5" />
+            <GradientStop Color="#FF8282" Offset="1.0" />
         </LinearGradientBrush>
     </ContentPage.Background>
 
@@ -25,6 +24,7 @@
                 <StackLayout>
 
                     <Label Text="CADASTRO DO CORRENTISTA" 
+                           BackgroundColor="White"
                            FontSize="23"
                            FontAttributes="Bold"
                            WidthRequest="260"
