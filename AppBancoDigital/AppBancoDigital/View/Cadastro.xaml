@@ -80,27 +80,23 @@
                            TextColor="Black"  />
 
                     <Button Text="Finalizar o Cadastro" 
+                            x:Name="fim_cad"
                             TextColor="White"
                             BackgroundColor="Black"
                             FontAttributes="Bold"
-                            Opacity="0.4"
                             WidthRequest="300"
                             Clicked="Button_Clicked" 
-                            BorderColor="Transparent"
                             CornerRadius="15"
-                            BorderWidth="3" 
                             Margin="10,30,20,8"/>
 
                     <Button Text="VOLTAR" 
+                            x:Name="voltar"
                             TextColor="White"
                             BackgroundColor="Black"
-                            Opacity="0.4"
                             FontAttributes="Bold"
                             WidthRequest="300"
                             Clicked="Button_Clicked_1" 
                             CornerRadius="15"
-                            BorderColor="Transparent"
-                            BorderWidth="3" 
                             Margin="10,-10,20,10"/>
                 </StackLayout>
             </Frame>

@@ -16,7 +16,10 @@ namespace AppBancoDigital.View
     {
         public Cadastro()
         {
+            
             InitializeComponent();
+            fim_cad.BackgroundColor = Color.FromRgba(0, 0, 0, 64);
+            voltar.BackgroundColor = Color.FromRgba(0, 0, 0, 64);
             NavigationPage.SetHasNavigationBar(this, false);
             cadastro_icon.Source = ImageSource.FromResource("AppBancoDigital.Imagens.cadastro_icon.png");
         }
