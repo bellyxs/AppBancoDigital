@@ -7,11 +7,15 @@
 
   <ItemGroup>
     <None Remove="Imagens\cadastro_icon.png" />
+    <None Remove="Imagens\login.png" />
     <None Remove="Imagens\logo_banco.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Imagens\cadastro_icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\login.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagens\logo_banco.png">

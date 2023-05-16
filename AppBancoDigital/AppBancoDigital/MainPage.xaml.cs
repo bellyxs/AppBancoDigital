@@ -15,6 +15,7 @@ namespace AppBancoDigital
         public MainPage()
         {
             InitializeComponent();
+            cadastro.BackgroundColor = Color.FromRgba(225, 225, 225, 225);
             NavigationPage.SetHasNavigationBar(this, false);
             logo_banco.Source = ImageSource.FromResource("AppBancoDigital.Imagens.logo_banco.png");
 

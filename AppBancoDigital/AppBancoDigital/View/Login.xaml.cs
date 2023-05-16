@@ -18,6 +18,7 @@ namespace AppBancoDigital.View
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            login.Source = ImageSource.FromResource("AppBancoDigital.Imagens.login.png");
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

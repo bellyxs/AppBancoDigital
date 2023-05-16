@@ -31,6 +31,7 @@
                    />
 
             <Button Text="Cadastre-se"
+                    x:Name="cadastro"
                     FontSize="Subtitle"
                     BackgroundColor="Black"
                     Opacity="0.4"
