@@ -14,25 +14,29 @@
 
     <ContentPage.Content>
         <StackLayout>
+            
+        <Image x:Name="cadastro_icon" Margin="10,0,10,0" Scale="0.4"></Image>
 
             <Frame CornerRadius="10"
                    x:Name="frame_cadastro"
                    BackgroundColor="Transparent"
                    HasShadow="False"
-                   VerticalOptions="CenterAndExpand" Margin="10,24,10,60">
+                   VerticalOptions="CenterAndExpand" Margin="10,-10,10,60">
+
+
 
                 <StackLayout>
 
-                    <Label Text="CADASTRO DO CORRENTISTA" 
-                           BackgroundColor="White"
+                    <Label Text="" 
+                           BackgroundColor="Transparent"
                            FontSize="23"
                            FontAttributes="Bold"
                            WidthRequest="260"
                            TextColor="White"
-                           HorizontalTextAlignment="Center" Margin="10,50,10,15"  />
+                           HorizontalTextAlignment="Center" Margin="20,-90,10,35"  />
 
                     <Label Text="INFORME O SEU NOME:" 
-                           TextColor="White"
+                           TextColor="Black"
                            FontSize="13" 
                            FontAttributes="Bold"/>
                     <Entry x:Name="txt_nome"
@@ -40,7 +44,7 @@
                             />
 
                     <Label Text="INFORME O SEU CPF:" 
-                           TextColor="White" 
+                           TextColor="Black" 
                            FontSize="13" 
                            FontAttributes="Bold"/>
                     <Entry x:Name="txt_cpf"
@@ -48,7 +52,7 @@
                             />
 
                     <Label Text="INFORME A SUA DATA DE NASCIMENTO:"   
-                           TextColor="White"
+                           TextColor="Black"
                            FontSize="13"
                            FontAttributes="Bold"
                            Margin="0,14,10,0"
@@ -56,29 +60,30 @@
                     <DatePicker x:Name="dtpck_datanasc"
                                             DateSelected="dtpck_datanasc_DateSelected"
                                             Format="dd/MM/yyyy"
-                                TextColor="White"
+                                TextColor="Black"
                                 FontAttributes="Bold"/>
 
 
 
                     <Label Text="DEFINA A SUA SENHA:" 
-                           TextColor="White" 
+                           TextColor="Black" 
                            FontSize="13"
                            FontAttributes="Bold"/>
                     <Entry x:Name="txt_senha"   
                            TextColor="White"    />
 
                     <Label Text="CONFIRME A SUA SENHA:"
-                           TextColor="White" 
+                           TextColor="Black" 
                            FontSize="13"
                            FontAttributes="Bold"/>
                     <Entry x:Name="txt_senhaconfirm"   
-                           TextColor="White"  />
+                           TextColor="Black"  />
 
                     <Button Text="Finalizar o Cadastro" 
                             TextColor="White"
-                            BackgroundColor="#148F77"
+                            BackgroundColor="Black"
                             FontAttributes="Bold"
+                            Opacity="0.4"
                             WidthRequest="300"
                             Clicked="Button_Clicked" 
                             BorderColor="Transparent"
@@ -86,9 +91,10 @@
                             BorderWidth="3" 
                             Margin="10,30,20,8"/>
 
-                    <Button Text="Voltar" 
+                    <Button Text="VOLTAR" 
                             TextColor="White"
-                            BackgroundColor="#148F77"
+                            BackgroundColor="Black"
+                            Opacity="0.4"
                             FontAttributes="Bold"
                             WidthRequest="300"
                             Clicked="Button_Clicked_1" 

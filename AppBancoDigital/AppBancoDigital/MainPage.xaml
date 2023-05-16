@@ -17,17 +17,22 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="BANCO DIGITAL"
+            <Image x:Name="logo_banco" Margin="13,187,0,-245" Scale="1.4">
+                
+            </Image>
+         
+            <Label Text=""
                    FontSize="45"
                    TextColor="White"
                    BackgroundColor="Transparent"
                    HorizontalOptions="CenterAndExpand"
                    FontAttributes="Bold"
-                   Margin="13,265,0,25"/>
+                   Margin="13,165,0,25"
+                   />
 
-            <Button Text="Abrir Conta"
+            <Button Text="Cadastre-se"
                     FontSize="Subtitle"
-                    BackgroundColor="White"
+                    BackgroundColor="Black"
                     Opacity="0.4"
                     WidthRequest="250"
                     HorizontalOptions="CenterAndExpand"
@@ -35,7 +40,7 @@
                     FontAttributes="Bold"
                     BorderWidth="2"
                     CornerRadius="15"
-                    TextColor="Black"
+                    TextColor="White"
                     Clicked="Button_Clicked"/>
 
             <Button Text="Entrar"
@@ -43,12 +48,12 @@
                     HorizontalOptions="CenterAndExpand"
                     FontSize="Subtitle"
                     FontAttributes="Bold"
-                    BackgroundColor="White"
+                    BackgroundColor="Black"
                     Opacity="0.4"
                     CornerRadius="15"
                     BorderColor="Transparent"
                     BorderWidth="2"
-                    TextColor="Black"
+                    TextColor="White"
                     Clicked="Button_Clicked_1"/>
 
         </StackLayout>

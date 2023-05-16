@@ -18,6 +18,7 @@ namespace AppBancoDigital.View
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            cadastro_icon.Source = ImageSource.FromResource("AppBancoDigital.Imagens.cadastro_icon.png");
         }
 
             private async void Button_Clicked(object sender, EventArgs e)

@@ -24,39 +24,43 @@
                 <StackLayout>
 
                     <Label Text="LOGIN" 
-                           FontSize="23"
+                           FontSize="30"
                            FontAttributes="Bold"
                            WidthRequest="260"
-                           TextColor="White"
+                           TextColor="Black"
                            HorizontalTextAlignment="Center" Margin="10,50,10,15"  />
 
                     <Label Text="NOME:" 
-                           TextColor="White"
-                           FontSize="13" 
+                           TextColor="Black"
+                           FontSize="15" 
                            FontAttributes="Bold"/>
                     <Entry x:Name="txt_nome"
-                           TextColor="White"
+                           TextColor="Black"
+                           Placeholder="Digite o seu nome..."
                             />
 
                     <Label Text="CPF:" 
-                           TextColor="White"
-                           FontSize="13" 
+                           TextColor="Black"
+                           FontSize="15" 
                            FontAttributes="Bold"/>
                     <Entry x:Name="txt_cpf"
-                           TextColor="White"
+                           TextColor="Black"
+                           Placeholder="Digite o seu CPF..."
                             />
 
                     <Label Text="SENHA:" 
-                           TextColor="White"
-                           FontSize="13"
+                           TextColor="Black"
+                           FontSize="15"
                            FontAttributes="Bold"/>
                     <Entry x:Name="txt_senha" 
                            IsPassword="True"
-                           TextColor="White" />
+                           TextColor="black"
+                           Placeholder="Digite a sua senha..."/>
 
                     <Button Text="Entrar" 
                             TextColor="White"
-                            BackgroundColor="#148F77"
+                            BackgroundColor="Black"
+                            Opacity="0.4"
                             FontAttributes="Bold"
                             WidthRequest="300"
                             Clicked="Button_Clicked" 
@@ -67,7 +71,8 @@
 
                     <Button Text="Voltar" 
                             TextColor="White"
-                            BackgroundColor="#148F77"
+                            BackgroundColor="Black"
+                            Opacity="0.4"
                             FontAttributes="Bold"
                             WidthRequest="300"
                             Clicked="Button_Clicked_1" 
