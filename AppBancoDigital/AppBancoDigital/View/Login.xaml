@@ -19,7 +19,7 @@
                   <Frame CornerRadius="10"
                    x:Name="form_login"                  
                    HasShadow="False"
-                   VerticalOptions="CenterAndExpand" Margin="15,-110,15,65">
+                   VerticalOptions="CenterAndExpand" Margin="15,-140,15,65">
 
                 <StackLayout>
 

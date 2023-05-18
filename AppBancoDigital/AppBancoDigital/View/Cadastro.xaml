@@ -19,9 +19,8 @@
 
             <Frame CornerRadius="10"
                    x:Name="frame_cadastro"
-                   BorderColor="Black"
-                   HasShadow="True"
-                   VerticalOptions="CenterAndExpand" Margin="15,-24,15,60">
+                   HasShadow="False"
+                   VerticalOptions="CenterAndExpand" Margin="15,-30,15,60">
 
 
 
@@ -33,7 +32,7 @@
                            FontSize="13" 
                            FontAttributes="Bold"/>
                     <Entry x:Name="txt_nome"
-                           TextColor="White"
+                           TextColor="black"
                             />
 
                     <Label Text="INFORME O SEU CPF:" 
@@ -41,7 +40,7 @@
                            FontSize="13" 
                            FontAttributes="Bold"/>
                     <Entry x:Name="txt_cpf"
-                           TextColor="White"
+                           TextColor="Black"
                             />
 
                     <Label Text="INFORME A SUA DATA DE NASCIMENTO:"   
@@ -63,7 +62,7 @@
                            FontSize="13"
                            FontAttributes="Bold"/>
                     <Entry x:Name="txt_senha"   
-                           TextColor="White"    />
+                           TextColor="Black"    />
 
                     <Label Text="CONFIRME A SUA SENHA:"
                            TextColor="Black" 
