@@ -19,6 +19,8 @@ namespace AppBancoDigital.View
             InitializeComponent();
             voltar.BackgroundColor = Color.FromRgba(0, 0, 0, 64);
             entrar.BackgroundColor = Color.FromRgba(0, 0, 0, 64);
+            form_login.BackgroundColor = Color.FromRgba(0, 0, 0, 50);
+
             NavigationPage.SetHasNavigationBar(this, false);
             login.Source = ImageSource.FromResource("AppBancoDigital.Imagens.login.png");
         }

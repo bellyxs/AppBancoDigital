@@ -15,21 +15,14 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Image x:Name="login" Margin="10,0,10,0" Scale="0.3"></Image>
-                    <Frame CornerRadius="10"
-                   x:Name="form_login"
-                   BackgroundColor="Transparent"
+            <Image x:Name="login" Margin="10,-20,10,0" Scale="0.3"></Image>
+                  <Frame CornerRadius="10"
+                   x:Name="form_login"                  
                    HasShadow="False"
-                   VerticalOptions="CenterAndExpand" Margin="10,-150,10,60">
+                   VerticalOptions="CenterAndExpand" Margin="15,-110,15,65">
 
                 <StackLayout>
 
-                    <Label Text="LOGIN" 
-                           FontSize="30"
-                           FontAttributes="Bold"
-                           WidthRequest="260"
-                           TextColor="Black"
-                           HorizontalTextAlignment="Center" Margin="10,-80,10,15"  />
 
                     <Label Text="NOME:" 
                            TextColor="Black"

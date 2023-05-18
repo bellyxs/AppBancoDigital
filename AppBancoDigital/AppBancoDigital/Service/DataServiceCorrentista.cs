@@ -9,7 +9,7 @@ namespace AppBancoDigital.Service
 {
     public class DataServiceCorrentista : DataService
     {
-        public static async Task<Correntista> Cadastrar(Correntista c)
+        public static async Task<Correntista>Cadastrar(Correntista c)
         {
             var json_to_send = JsonConvert.SerializeObject(c);
 

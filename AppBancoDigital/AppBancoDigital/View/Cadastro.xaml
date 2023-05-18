@@ -19,21 +19,14 @@
 
             <Frame CornerRadius="10"
                    x:Name="frame_cadastro"
-                   BackgroundColor="Transparent"
-                   HasShadow="False"
-                   VerticalOptions="CenterAndExpand" Margin="10,-10,10,60">
+                   BorderColor="Black"
+                   HasShadow="True"
+                   VerticalOptions="CenterAndExpand" Margin="15,-24,15,60">
 
 
 
                 <StackLayout>
 
-                    <Label Text="" 
-                           BackgroundColor="Transparent"
-                           FontSize="23"
-                           FontAttributes="Bold"
-                           WidthRequest="260"
-                           TextColor="White"
-                           HorizontalTextAlignment="Center" Margin="20,-90,10,35"  />
 
                     <Label Text="INFORME O SEU NOME:" 
                            TextColor="Black"
