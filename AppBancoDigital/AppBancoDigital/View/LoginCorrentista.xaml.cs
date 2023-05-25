@@ -12,9 +12,9 @@ using Xamarin.Forms.Xaml;
 namespace AppBancoDigital.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Login : ContentPage
+    public partial class LoginCorrentista : ContentPage
     {
-        public Login()
+        public LoginCorrentista()
         {
             InitializeComponent();
             voltar.BackgroundColor = Color.FromRgba(0, 0, 0, 64);
@@ -30,9 +30,9 @@ namespace AppBancoDigital.View
             try                                                                                 
             {
                 Correntista c = await DataServiceCorrentista.Autorizar(new Correntista
-                {                                                                           
+                {
                     nome = txt_nome.Text,
-                    cpf = txt_cpf.Text,
+                    cpf = txt_cpf.Text.Replace(".", string.Empty).Replace("-", string.Empty),
                     senha = txt_senha.Text
                 });
                 Console.WriteLine(c.id);
@@ -50,7 +50,6 @@ namespace AppBancoDigital.View
 
                     await DisplayAlert("Erro!", msg, "OK");
 
-                    await Navigation.PushAsync(new View.PaginaInicial());
                 }
 
             }

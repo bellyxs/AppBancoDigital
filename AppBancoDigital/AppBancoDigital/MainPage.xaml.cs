@@ -24,12 +24,12 @@ namespace AppBancoDigital
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new View.Cadastro());
+            Navigation.PushAsync(new View.CadastroCorrentista());
         }
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new View.Login());
+            Navigation.PushAsync(new View.LoginCorrentista());
         }
     }
 }

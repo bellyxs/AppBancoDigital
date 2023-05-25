@@ -12,9 +12,9 @@ using Xamarin.Forms.Xaml;
 namespace AppBancoDigital.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Cadastro : ContentPage
+    public partial class CadastroCorrentista : ContentPage
     {
-        public Cadastro()
+        public CadastroCorrentista()
         {
             
             InitializeComponent();
@@ -34,14 +34,14 @@ namespace AppBancoDigital.View
                     nome = txt_nome.Text,
                     senha = txt_senha.Text,
                     data_nasc = dtpck_datanasc.Date.ToString("dd/MM/yyyy"),
-                    cpf = txt_cpf.Text
+                    cpf = txt_cpf.Text.Replace(".", string.Empty).Replace("-", string.Empty)
                 });
 
-                string msg = $"Correntista inserido com sucesso. Código gerado: {c.id} ";
+                string msg = $"Correntista inserido com sucesso. Execute seu login.";
 
                 await DisplayAlert("Sucesso!", msg, "OK");
 
-                await Navigation.PushAsync(new View.Login());
+                await Navigation.PushAsync(new View.LoginCorrentista());
             }
             catch (Exception ex)
             {
