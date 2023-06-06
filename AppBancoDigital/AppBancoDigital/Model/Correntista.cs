@@ -9,7 +9,7 @@ namespace AppBancoDigital.Model
         public int id { get; set; }
         public string nome { get; set; }
         public string cpf { get; set; }
-        public string data_nasc { get; set; }
+        public DateTime data_nasc { get; set; }
         public string senha { get; set; }
     }
 }

@@ -33,7 +33,7 @@ namespace AppBancoDigital.View
                 {
                     nome = txt_nome.Text,
                     senha = txt_senha.Text,
-                    data_nasc = dtpck_datanasc.Date.ToString("dd/MM/yyyy"),
+                    data_nasc = dtpck_datanasc.Date,
                     cpf = txt_cpf.Text.Replace(".", string.Empty).Replace("-", string.Empty)
                 });
 
