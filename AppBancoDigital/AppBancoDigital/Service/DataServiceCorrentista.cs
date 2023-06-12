@@ -25,11 +25,13 @@ namespace AppBancoDigital.Service
 
             string json = await DataService.GetDataFromService(String.Format("/correntista/entrar?cpf={0}&senha={1}", c.cpf, c.senha));
 
+            Console.WriteLine(json);
             Correntista correntista = new Correntista();
-            if (json != "false")
+            if (json != "false" )
             {
                 correntista = JsonConvert.DeserializeObject<Correntista>(json);
             }
+            Console.WriteLine(json);
 
 
             return correntista;

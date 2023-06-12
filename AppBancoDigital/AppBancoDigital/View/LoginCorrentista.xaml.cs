@@ -35,8 +35,8 @@ namespace AppBancoDigital.View
                     cpf = txt_cpf.Text.Replace(".", string.Empty).Replace("-", string.Empty),
                     senha = txt_senha.Text
                 });
-                Console.WriteLine(c.id);
-                if (c.id != 0)
+               
+                if (c.id != 0 || c.id != null)
                 {
                     string msg = $"Correntista logado com sucesso. Código gerado: {c.id} ";
 
