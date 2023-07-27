@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AppBancoDigital.View
+namespace AppBancoDigital.View.Correntistas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginCorrentista : ContentPage
@@ -36,7 +36,7 @@ namespace AppBancoDigital.View
                     senha = txt_senha.Text
                 });
                
-                if (c.id != 0 || c.id != null)
+                if (c.id != 0)
                 {
                     string msg = $"Correntista logado com sucesso. Código gerado: {c.id} ";
 

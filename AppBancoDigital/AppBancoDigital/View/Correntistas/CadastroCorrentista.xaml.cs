@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AppBancoDigital.View
+namespace AppBancoDigital.View.Correntistas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CadastroCorrentista : ContentPage
@@ -37,11 +37,14 @@ namespace AppBancoDigital.View
                     cpf = txt_cpf.Text.Replace(".", string.Empty).Replace("-", string.Empty)
                 });
 
-                string msg = $"Correntista inserido com sucesso. Execute seu login.";
+                if (c != null)
+                {
+                    string msg = $"Correntista inserido com sucesso. Execute seu login.";
 
-                await DisplayAlert("Sucesso!", msg, "OK");
+                    await DisplayAlert("Sucesso!", msg, "OK");
 
-                await Navigation.PushAsync(new View.LoginCorrentista());
+                    await Navigation.PushAsync(new View.Correntistas.LoginCorrentista());
+                }
             }
             catch (Exception ex)
             {
