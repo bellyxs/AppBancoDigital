@@ -21,6 +21,9 @@
     <None Remove="Imagens\cadastro_icon.png" />
     <None Remove="Imagens\login.png" />
     <None Remove="Imagens\logo_banco.png" />
+    <None Remove="Imagens\olho.png" />
+    <None Remove="Imagens\opcoes.png" />
+    <None Remove="Imagens\Options.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,6 +34,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagens\logo_banco.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\olho.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\opcoes.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

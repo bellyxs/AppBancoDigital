@@ -4,9 +4,47 @@
              x:Class="AppBancoDigital.View.PaginaInicial">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ScrollView>
+                <StackLayout>
+
+                    <StackLayout BackgroundColor="#FF8282" Padding="10" Spacing="10">
+
+                        <StackLayout Orientation="Horizontal">
+                            <ImageButton Source="login.png" Padding="13" BackgroundColor="Black" CornerRadius="50" HorizontalOptions="StartAndExpand" x:Name="icon" WidthRequest="50" Margin="10,10,20,8"/>
+                            <ImageButton Source="olho.png" Clicked="olho_Clicked" Padding="13" BackgroundColor="Black" CornerRadius="50" x:Name="olho" WidthRequest="50" Margin="10,10,1,8"/>
+                            <ImageButton Source="opcoes.png" Clicked="opcoes_Clicked" Padding="13" BackgroundColor="Black" CornerRadius="50" x:Name="opcoes" WidthRequest="50" Margin="10,10,5,8"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <Label Text="XD" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+                            <Label x:Name="lblconta" FontSize="20" Text="{Binding nome}" TextColor="White" FontAttributes="Bold"/>
+                        </StackLayout>
+                        <ContentView>
+                            <StackLayout>
+                            <ScrollView>
+                                <Frame CornerRadius="23"
+                            x:Name="frame_paginicial"
+                             HasShadow="False"
+                              Padding="40"
+                             VerticalOptions="CenterAndExpand" Margin="10,10,10,50">
+                                <Frame.Background>
+                                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                                        <GradientStop Color="#A35AF1" Offset="0.1" />
+                                        <GradientStop Color="#FF8270" Offset="0.3" />
+                                        <GradientStop Color="#FFAA93" Offset="0.1" />
+                                        <GradientStop Color="#FFAA94" Offset="1.0" />
+                                    </LinearGradientBrush>
+                                </Frame.Background>
+                            </Frame>
+                        </ScrollView>
+                        </StackLayout>
+                        </ContentView>
+
+                    </StackLayout>
+                    
+
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -15,6 +15,23 @@ namespace AppBancoDigital.View
         public PaginaInicial()
         {
             InitializeComponent();
+
+            opcoes.BackgroundColor = Color.FromRgba(0, 0, 0, 64);
+            olho.BackgroundColor = Color.FromRgba(0, 0, 0, 64);
+            icon.BackgroundColor = Color.FromRgba(0, 0, 0, 50);
+            NavigationPage.SetHasNavigationBar(this, false);
+            opcoes.Source = ImageSource.FromResource("AppBancoDigital.Imagens.opcoes.png");
+            icon.Source = ImageSource.FromResource("AppBancoDigital.Imagens.login.png");
+            olho.Source = ImageSource.FromResource("AppBancoDigital.Imagens.olho.png");
+        }
+   private void opcoes_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void olho_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }
