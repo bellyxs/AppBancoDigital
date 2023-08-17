@@ -25,6 +25,11 @@
     <None Remove="Imagens\olhoesconde.png" />
     <None Remove="Imagens\opcoes.png" />
     <None Remove="Imagens\Options.png" />
+    <None Remove="Imagens\pagar.png" />
+    <None Remove="Imagens\pix.png" />
+    <None Remove="Imagens\qrcode.png" />
+    <None Remove="Imagens\recarga.png" />
+    <None Remove="Imagens\seguro.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,6 +49,21 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagens\opcoes.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\pagar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\pix.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\qrcode.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\recarga.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\seguro.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
