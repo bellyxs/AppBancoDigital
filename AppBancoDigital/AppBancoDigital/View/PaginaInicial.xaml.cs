@@ -12,9 +12,21 @@ namespace AppBancoDigital.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PaginaInicial : ContentPage
     {
-        public PaginaInicial()
+        double saldo;
+        double fatura;
+        double limite = 2500;
+        
+            public PaginaInicial()
         {
             InitializeComponent();
+
+            saldo = 1432.45;
+            fatura = 78.87;
+            limite -= fatura;
+            LblSaldo.Text = saldo.ToString("C");
+            LblFatura.Text = fatura.ToString("C");
+            LblLimite.Text = limite.ToString("C");
+
 
             opcoes.BackgroundColor = Color.FromRgba(0, 0, 0, 64);
             olho.BackgroundColor = Color.FromRgba(0, 0, 0, 64);
@@ -29,7 +41,9 @@ namespace AppBancoDigital.View
             pagar.Source = ImageSource.FromResource("AppBancoDigital.Imagens.pagar.png");
             seguro.Source = ImageSource.FromResource("AppBancoDigital.Imagens.seguro.png");
             qrcode.Source = ImageSource.FromResource("AppBancoDigital.Imagens.qrcode.png");
-            /**olhoesconde.Source = ImageSource.FromResource("AppBancoDigital.Imagens.olhoesconde.png");*/
+            cartaocredito.Source = ImageSource.FromResource("AppBancoDigital.Imagens.cartaocredito.png");
+            setadireita.Source = ImageSource.FromResource("AppBancoDigital.Imagens.setadireita.png");
+            
         }
    private void opcoes_Clicked(object sender, EventArgs e)
         {
@@ -38,6 +52,19 @@ namespace AppBancoDigital.View
 
         private void olho_Clicked(object sender, EventArgs e)
         {
+            {
+                if (LblSaldo.Text == saldo.ToString("C"))
+                {
+                    olho.Source = "olho.png";
+                    LblSaldo.Text = "━━━━━━";
+                }
+                else
+                {
+                    LblSaldo.Text = saldo.ToString("C");
+                    olho.Source = "olho.png";
+                }
+            }
+
 
         }
 
@@ -49,7 +76,7 @@ namespace AppBancoDigital.View
 
         private void Pix_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new View.Pix());
         }
 
         private void pagar_Clicked(object sender, EventArgs e)

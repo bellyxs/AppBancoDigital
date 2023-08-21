@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBancoDigital.View.Pix"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White">
+
+    <StackLayout>
+
+     
+        <Frame HasShadow="True">
+            <ImageButton Source="voltar.png" Clicked="btnBack" x:Name="voltar" WidthRequest="35" 
+                         HorizontalOptions="Start" BackgroundColor="White"/>
+        </Frame>
+
+        <Grid RowDefinitions="Auto,60,50,140,50" Padding="15">
+            <Label Text="Área Pix."
+                   TextColor="Black" FontSize="21"/>
+            <Label Text="Envie e receba em qualquer hora ou dia da semana, sem pagar nada por isso." FontSize="15"
+                   TextColor="Gray" Grid.Row="1"/>
+
+            <Label Text="Envie ou Receba" FontAttributes="Bold"
+                   TextColor="Black" FontSize="21" Grid.Row="2"/>
+
+            <StackLayout Orientation="Horizontal" Spacing="60" Grid.Row="3">
+
+                <StackLayout>
+                    <ImageButton Source="cobrar.png" x:Name="Transferencia" Clicked="Transferencia_Clicked" WidthRequest="60" HeightRequest="60" BackgroundColor="#f0f1f5"
+                                 Padding="15" CornerRadius="50"/>
+
+                    <Label TextColor="Black" FontSize="14" HorizontalOptions="Center" Text="Transferir"/>
+                </StackLayout>
+
+
+                <StackLayout>
+                    <ImageButton Source="banco.png" x:Name="Receber" Clicked="Receber_Clicked" WidthRequest="60" HeightRequest="60" BackgroundColor="#f0f1f5"
+                                 Padding="15" CornerRadius="50"/>
+
+                    <Label TextColor="Black" FontSize="14" HorizontalOptions="Center" Text="Depositar"/>
+                </StackLayout>
+
+            </StackLayout>
+
+
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>
