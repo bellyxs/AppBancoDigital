@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppBancoDigital.Model;
+using AppBancoDigital.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,11 +17,17 @@ namespace AppBancoDigital.View
         public Recarga()
         {
             InitializeComponent();
+            voltar.Source = ImageSource.FromResource("AppBancoDigital.Imagens.voltar.png");
         }
 
         private void voltar_Clicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new View.PaginaInicial());
+        }
 
+        private void fin_recarga_Clicked(object sender, EventArgs e)
+        {
+            
         }
     }
 }

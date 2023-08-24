@@ -16,27 +16,34 @@
         <Grid RowDefinitions="Auto,60,50,140,50" Padding="15">
 
 
-
             <StackLayout>
                 <Frame BackgroundColor="#f0f1f5" WidthRequest="280" CornerRadius="20" HeightRequest="80">
-
                     <Label>
                         <Label.FormattedText>
-
                             <FormattedString>
-
-                                <Span Text="Área Pix: 
+                                <Span Text="Realize a sua Recarga Aqui: 
                                            " FontAttributes="Bold" FontSize="19" TextColor="Black"/>
-                                <Span Text="Envie e receba em qualquer hora ou dia da semana, sem pagar nada por isso!" FontSize="17" TextColor="Black"/>
-
+                                <Span Text="Recarregue e receba um bônus de 1GB grátis!" FontSize="17" TextColor="Black"/>
                             </FormattedString>
-
                         </Label.FormattedText>
                     </Label>
                 </Frame>
-
             </StackLayout>
         </Grid>
+
+        <StackLayout>
+            <Picker x:Name="pickeroperadora" Title="Selecione a Operadora:"
+                        Margin="0,-80,0,10">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Claro</x:String>
+                        <x:String>Tim</x:String>
+                        <x:String>Vivo</x:String>
+                        <x:String>Laricell</x:String>
+                        <x:String>Oi</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </StackLayout>
     </StackLayout>
 </ContentPage>
-            
