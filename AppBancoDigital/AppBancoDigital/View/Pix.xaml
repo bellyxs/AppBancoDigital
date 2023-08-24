@@ -14,15 +14,35 @@
         </Frame>
 
         <Grid RowDefinitions="Auto,60,50,140,50" Padding="15">
-            <Label Text="Área Pix."
-                   TextColor="Black" FontSize="21"/>
-            <Label Text="Envie e receba em qualquer hora ou dia da semana, sem pagar nada por isso." FontSize="15"
-                   TextColor="Gray" Grid.Row="1"/>
 
-            <Label Text="Envie ou Receba" FontAttributes="Bold"
-                   TextColor="Black" FontSize="21" Grid.Row="2"/>
 
-            <StackLayout Orientation="Horizontal" Spacing="60" Grid.Row="3">
+
+            <StackLayout>
+                <Frame BackgroundColor="#f0f1f5" WidthRequest="280" CornerRadius="20" HeightRequest="80">
+
+                    <Label>
+                        <Label.FormattedText>
+
+                            <FormattedString>
+
+                                <Span Text="Área Pix: 
+                                           " FontAttributes="Bold" FontSize="19" TextColor="Black"/>
+                                <Span Text="Envie e receba em qualquer hora ou dia da semana, sem pagar nada por isso!" FontSize="17" TextColor="Black"/>
+
+                            </FormattedString>
+
+                        </Label.FormattedText>
+                    </Label>
+                </Frame>
+
+            </StackLayout>
+
+            <Label Text="Envie ou Receba" FontAttributes="Bold"            
+            TextColor="Black" FontSize="20" Grid.Row="1" Margin="5,5,-0,0"/>
+            
+
+            <StackLayout Orientation="Horizontal" Spacing="35" Grid.Row="2" Margin="2,-20,0,0">
+                
 
                 <StackLayout>
                     <ImageButton Source="cobrar.png" x:Name="Transferencia" Clicked="Transferencia_Clicked" WidthRequest="60" HeightRequest="60" BackgroundColor="#f0f1f5"
