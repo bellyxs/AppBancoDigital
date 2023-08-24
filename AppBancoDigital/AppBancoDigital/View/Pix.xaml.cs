@@ -33,7 +33,7 @@ namespace AppBancoDigital.View
 
         private void Transferencia_Clicked(object sender, EventArgs e)
         {
-           /** Navigation.PushAsync(new PixTransferir());*/
+            Navigation.PushAsync(new PixTransferencia());
         }
     }
 }

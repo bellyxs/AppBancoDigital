@@ -96,13 +96,13 @@
                             </StackLayout>
 
                             <StackLayout>
-                                <ImageButton Source="pagar.png" x:Name="pagar" Clicked="pagar_Clicked" BackgroundColor="#f0f1f5" Padding="13" CornerRadius="50" WidthRequest="60" HeightRequest="60"/>
-                                <Label TextColor="Black" FontSize="14" HorizontalOptions="Center" FontAttributes="Bold" Text="Pagar"/>
+                            <ImageButton Source="recarga.png" x:Name="recarga" Clicked="recarga_Clicked" BackgroundColor="#f0f1f5" Padding="13" CornerRadius="50" WidthRequest="60" HeightRequest="60"/>
+                                <Label TextColor="Black" FontSize="14" HorizontalOptions="Center" FontAttributes="Bold" Text="Recarga"/>
                             </StackLayout>
 
                             <StackLayout>
-                                <ImageButton Source="recarga.png" x:Name="recarga" Clicked="recarga_Clicked" BackgroundColor="#f0f1f5" Padding="13" CornerRadius="50" WidthRequest="60" HeightRequest="60"/>
-                                <Label TextColor="Black" FontSize="14" HorizontalOptions="Center" FontAttributes="Bold" Text="Recarga"/>
+                            <ImageButton Source="pagar.png" x:Name="pagar" Clicked="pagar_Clicked" BackgroundColor="#f0f1f5" Padding="13" CornerRadius="50" WidthRequest="60" HeightRequest="60"/>
+                                <Label TextColor="Black" FontSize="14" HorizontalOptions="Center" FontAttributes="Bold" Text="Pagar"/>
                             </StackLayout>
 
                             <StackLayout>

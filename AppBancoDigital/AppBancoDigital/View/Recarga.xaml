@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBancoDigital.View.Recarga"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White">
+
+    <StackLayout>
+
+
+        <Frame HasShadow="True">
+            <ImageButton Source="voltar.png" Clicked="voltar_Clicked" x:Name="voltar" WidthRequest="35" 
+                         HorizontalOptions="Start" BackgroundColor="White"/>
+        </Frame>
+
+        <Grid RowDefinitions="Auto,60,50,140,50" Padding="15">
+
+
+
+            <StackLayout>
+                <Frame BackgroundColor="#f0f1f5" WidthRequest="280" CornerRadius="20" HeightRequest="80">
+
+                    <Label>
+                        <Label.FormattedText>
+
+                            <FormattedString>
+
+                                <Span Text="Área Pix: 
+                                           " FontAttributes="Bold" FontSize="19" TextColor="Black"/>
+                                <Span Text="Envie e receba em qualquer hora ou dia da semana, sem pagar nada por isso!" FontSize="17" TextColor="Black"/>
+
+                            </FormattedString>
+
+                        </Label.FormattedText>
+                    </Label>
+                </Frame>
+
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>
+            

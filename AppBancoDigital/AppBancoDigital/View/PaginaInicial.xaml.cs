@@ -86,6 +86,7 @@ namespace AppBancoDigital.View
 
         private void recarga_Clicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new View.Recarga());
 
         }
 
