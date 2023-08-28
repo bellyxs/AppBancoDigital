@@ -13,7 +13,7 @@
                          HorizontalOptions="Start" BackgroundColor="White"/>
         </Frame>
 
-        <Grid RowDefinitions="Auto,60,50,140,50" Padding="15">
+        <Grid RowDefinitions="Auto,65,55,150,40" Padding="15">
 
 
             <StackLayout>
@@ -45,7 +45,7 @@
             </Picker>
         </StackLayout>
 
-        <StackLayout Margin="0,-9,0,10">
+        <StackLayout Margin="0,-0,0,10">
             <Picker x:Name="pickervalorrecarga" Title="Selecione o Valor:">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
@@ -62,13 +62,13 @@
         <StackLayout>
                  <Button Text="Finalizar a Recarga" 
                             x:Name="final_recarga"
-                            TextColor="White"  
+                            TextColor="Black"  
                             BackgroundColor="Black"
                             FontAttributes="Bold"
                             WidthRequest="300"
                             Clicked="final_recarga_Clicked" 
                             CornerRadius="15"
-                            Margin="10,30,20,10"/>
+                            Margin="10,20,20,10"/>
         </StackLayout>
     </StackLayout>
 </ContentPage>
