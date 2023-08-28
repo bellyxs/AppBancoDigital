@@ -18,10 +18,12 @@
     <None Remove="Imagens\banco.png" />
     <None Remove="Imagens\cadastro_icon.png" />
     <None Remove="Imagens\cartaocredito.png" />
+    <None Remove="Imagens\chipcartao.png" />
     <None Remove="Imagens\cobrar.png" />
     <None Remove="Imagens\login.png" />
     <None Remove="Imagens\logo_banco.png" />
     <None Remove="Imagens\mais.png" />
+    <None Remove="Imagens\mastercard.png" />
     <None Remove="Imagens\olho.png" />
     <None Remove="Imagens\olhoesconde.png" />
     <None Remove="Imagens\opcoes.png" />
@@ -45,6 +47,9 @@
     <EmbeddedResource Include="Imagens\cartaocredito.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\chipcartao.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Imagens\cobrar.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -55,6 +60,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagens\mais.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\mastercard.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagens\olho.png">

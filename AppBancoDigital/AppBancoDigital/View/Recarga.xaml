@@ -31,9 +31,8 @@
             </StackLayout>
         </Grid>
 
-        <StackLayout>
-            <Picker x:Name="pickeroperadora" Title="Selecione a Operadora:"
-                        Margin="0,-80,0,10">
+        <StackLayout Margin="0,-300,0,10">
+            <Picker x:Name="pickeroperadora" Title="Selecione a Operadora:">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Claro</x:String>
@@ -44,6 +43,32 @@
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
+        </StackLayout>
+
+        <StackLayout Margin="0,-9,0,10">
+            <Picker x:Name="pickervalorrecarga" Title="Selecione o Valor:">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>R$15,00</x:String>
+                        <x:String>R$20,00</x:String>
+                        <x:String>R$25,00</x:String>
+                        <x:String>R$30,00</x:String>
+                        <x:String>R$35,00</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </StackLayout>
+
+        <StackLayout>
+                 <Button Text="Finalizar a Recarga" 
+                            x:Name="final_recarga"
+                            TextColor="White"  
+                            BackgroundColor="Black"
+                            FontAttributes="Bold"
+                            WidthRequest="300"
+                            Clicked="final_recarga_Clicked" 
+                            CornerRadius="15"
+                            Margin="10,30,20,10"/>
         </StackLayout>
     </StackLayout>
 </ContentPage>

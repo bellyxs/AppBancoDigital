@@ -43,6 +43,7 @@ namespace AppBancoDigital.View
             qrcode.Source = ImageSource.FromResource("AppBancoDigital.Imagens.qrcode.png");
             cartaocredito.Source = ImageSource.FromResource("AppBancoDigital.Imagens.cartaocredito.png");
             setadireita.Source = ImageSource.FromResource("AppBancoDigital.Imagens.setadireita.png");
+
             
         }
    private void opcoes_Clicked(object sender, EventArgs e)
