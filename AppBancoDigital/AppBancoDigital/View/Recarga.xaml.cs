@@ -2,6 +2,7 @@
 using AppBancoDigital.Service;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,14 +27,15 @@ namespace AppBancoDigital.View
             Navigation.PushAsync(new View.PaginaInicial());
         }
 
-        private void fin_recarga_Clicked(object sender, EventArgs e)
+        private async void final_recarga_Clicked(object sender, EventArgs e)
         {
-            
-        }
+            bool answer = await DisplayAlert("Confirmação", "Gostaria de confirmar a sua recarga?", "Sim", "Não");
+            Debug.WriteLine("Answer: " + answer);
 
-        private void final_recarga_Clicked(object sender, EventArgs e)
-        {
+            await DisplayAlert("Sucesso!", "Recarga Realizada", "OK");
 
-        }
+            await Navigation.PushAsync(new View.PaginaInicial());
+
+        }   
     }
 }
