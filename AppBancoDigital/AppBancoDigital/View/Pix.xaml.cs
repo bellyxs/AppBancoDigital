@@ -19,6 +19,7 @@ namespace AppBancoDigital.View
             voltar.Source = ImageSource.FromResource("AppBancoDigital.Imagens.voltar.png");
             Transferencia.Source = ImageSource.FromResource("AppBancoDigital.Imagens.cobrar.png");
             Receber.Source = ImageSource.FromResource("AppBancoDigital.Imagens.banco.png");
+            QrCode.Source = ImageSource.FromResource("AppBancoDigital.Imagens.qrcode.png");
         }
 
         private void btnBack(object sender, EventArgs e)
@@ -34,6 +35,11 @@ namespace AppBancoDigital.View
         private void Transferencia_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new PixTransferencia());
+        }
+
+        private void QrCode_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PixQRCode());
         }
     }
 }

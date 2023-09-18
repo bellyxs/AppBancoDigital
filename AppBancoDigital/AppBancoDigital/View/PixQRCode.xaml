@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBancoDigital.View.PixQRCode"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit">
+
+
+    <ContentPage.Content>
+        <StackLayout Background="#fff">
+            <Grid RowDefinitions="*" ColumnDefinitions="*,*,*" Margin="12,30,0,0">
+
+                <ImageButton Source="voltar.png" Clicked="voltar_Clicked" x:Name="voltar" WidthRequest="35" 
+             HorizontalOptions="Start" BackgroundColor="White"/>
+            </Grid>
+
+
+            <Frame CornerRadius="10" VerticalOptions="StartAndExpand" WidthRequest="50" Scale="0.9">
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#A35AF1" Offset="0.1" />
+                        <GradientStop Color="#FF8270" Offset="1.0" />
+                        <GradientStop Color="#FFAA93" Offset="0.1" />
+                        <GradientStop Color="#FFAA94" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
+
+                    <Frame Scale="2" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" CornerRadius="10" HeightRequest="100" WidthRequest="100" Margin="0,70,0,0">
+                        <Image Aspect="AspectFill" x:Name="img_qr" Scale="1.5"/>
+                    </Frame>
+
+                    <Button x:Name="btn_gerar" Text="Gerar QR Code" Clicked="btn_gerar_Clicked" BackgroundColor="#fff" TextColor="#EE83D7" HeightRequest="45" Margin="0,90,0,0" CornerRadius="18"  />
+
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

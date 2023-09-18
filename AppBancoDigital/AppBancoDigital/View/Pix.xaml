@@ -59,6 +59,12 @@
                     <Label TextColor="Black" FontSize="14" HorizontalOptions="Center" Text="Depositar"/>
                 </StackLayout>
 
+                <StackLayout>
+                    <ImageButton Source="qrcode.png" x:Name="QrCode" Clicked="QrCode_Clicked" WidthRequest="60" HeightRequest="60" BackgroundColor="#f0f1f5"
+             Padding="15" CornerRadius="50"/>
+                    
+                    <Label TextColor="Black" FontSize="14" HorizontalOptions="Center" Text="QRCode"/>
+                </StackLayout>
             </StackLayout>
 
 
