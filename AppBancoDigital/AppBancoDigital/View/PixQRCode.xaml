@@ -14,7 +14,7 @@
             </Grid>
 
 
-            <Frame CornerRadius="10" VerticalOptions="StartAndExpand" WidthRequest="50" Scale="0.9">
+            <Frame CornerRadius="15" VerticalOptions="StartAndExpand" WidthRequest="50" Scale="0.9">
                 <Frame.Background>
                     <LinearGradientBrush>
                         <GradientStop Color="#A35AF1" Offset="0.1" />
@@ -29,7 +29,7 @@
                         <Image Aspect="AspectFill" x:Name="img_qr" Scale="1.5"/>
                     </Frame>
 
-                    <Button x:Name="btn_gerar" Text="Gerar QR Code" Clicked="btn_gerar_Clicked" BackgroundColor="#fff" TextColor="#EE83D7" HeightRequest="45" Margin="0,90,0,0" CornerRadius="18"  />
+                    <Button x:Name="btn_gerar" Text="Gerar QR Code" Clicked="btn_gerar_Clicked" TextColor="Black" HeightRequest="45" Margin="0,90,0,0" CornerRadius="18"  />
 
                 </StackLayout>
             </Frame>

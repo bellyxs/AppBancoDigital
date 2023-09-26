@@ -53,7 +53,7 @@
 
 
                 <StackLayout>
-                    <ImageButton Source="banco.png" x:Name="Receber" Clicked="Receber_Clicked" WidthRequest="60" HeightRequest="60" BackgroundColor="#f0f1f5"
+                    <ImageButton Source="banco.png" x:Name="Deposito" Clicked="Deposito_Clicked" WidthRequest="60" HeightRequest="60" BackgroundColor="#f0f1f5"
                                  Padding="15" CornerRadius="50"/>
 
                     <Label TextColor="Black" FontSize="14" HorizontalOptions="Center" Text="Depositar"/>

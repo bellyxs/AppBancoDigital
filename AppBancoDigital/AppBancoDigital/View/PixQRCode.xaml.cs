@@ -19,6 +19,7 @@ namespace AppBancoDigital.View
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             voltar.Source = ImageSource.FromResource("AppBancoDigital.Imagens.voltar.png");
+            btn_gerar.BackgroundColor = Color.FromRgba(0, 0, 0, 45);
 
         }
 
