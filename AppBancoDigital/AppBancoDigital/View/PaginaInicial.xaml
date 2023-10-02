@@ -111,8 +111,8 @@
                             </StackLayout>
 
                         <StackLayout>
-                            <ImageButton Source="qrcode.png" x:Name="qrcode" Clicked="qrcode_Clicked" BackgroundColor="#f0f1f5" Padding="13" CornerRadius="50" WidthRequest="60" HeightRequest="60"/>
-                            <Label TextColor="Black" FontSize="14" HorizontalOptions="Center" FontAttributes="Bold" Text="QRCode"/>
+                            <ImageButton Source="poupança.png" x:Name="poupança" Clicked="poupança_Clicked" BackgroundColor="#f0f1f5" Padding="13" CornerRadius="50" WidthRequest="60" HeightRequest="60"/>
+                            <Label TextColor="Black" FontSize="13" HorizontalOptions="Center" FontAttributes="Bold" Text="Poupança"/>
                         </StackLayout>
                     </StackLayout>
 

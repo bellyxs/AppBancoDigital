@@ -40,7 +40,7 @@ namespace AppBancoDigital.View
             recarga.Source = ImageSource.FromResource("AppBancoDigital.Imagens.recarga.png");
             pagar.Source = ImageSource.FromResource("AppBancoDigital.Imagens.pagar.png");
             seguro.Source = ImageSource.FromResource("AppBancoDigital.Imagens.seguro.png");
-            qrcode.Source = ImageSource.FromResource("AppBancoDigital.Imagens.qrcode.png");
+            poupança.Source = ImageSource.FromResource("AppBancoDigital.Imagens.poupança.png");
             cartaocredito.Source = ImageSource.FromResource("AppBancoDigital.Imagens.cartaocredito.png");
             setadireita.Source = ImageSource.FromResource("AppBancoDigital.Imagens.setadireita.png");
 
@@ -97,6 +97,11 @@ namespace AppBancoDigital.View
         }
 
         private void qrcode_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void poupança_Clicked(object sender, EventArgs e)
         {
 
         }

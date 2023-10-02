@@ -30,6 +30,7 @@
     <None Remove="Imagens\Options.png" />
     <None Remove="Imagens\pagar.png" />
     <None Remove="Imagens\pix.png" />
+    <None Remove="Imagens\poupança.png" />
     <None Remove="Imagens\qrcode.png" />
     <None Remove="Imagens\recarga.png" />
     <None Remove="Imagens\seguro.png" />
@@ -72,6 +73,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagens\pix.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\poupança.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagens\qrcode.png">
@@ -122,22 +126,25 @@
     <EmbeddedResource Update="View\PaginaInicial.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Pix.xaml">
+    <EmbeddedResource Update="View\Pix\Pix.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\PixDeposito.xaml">
+    <EmbeddedResource Update="View\Pix\PixDeposito.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\PixEnviar.xaml">
+    <EmbeddedResource Update="View\Pix\PixEnviar.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\PixQRCode.xaml">
+    <EmbeddedResource Update="View\Pix\PixQRCode.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\PixTransferencia.xaml">
+    <EmbeddedResource Update="View\Pix\PixTransferencia.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Recarga.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\ScanQRCode.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

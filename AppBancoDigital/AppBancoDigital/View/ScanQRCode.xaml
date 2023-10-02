@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"  
+             x:Class="AppBancoDigital.View.ScanQRCode">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid RowDefinitions="*" ColumnDefinitions="*,30,*" Margin="0,30,0,0">
+                <ImageButton Grid.Column="0" x:Name="btn_voltar" Clicked="btn_voltar_Clicked" BackgroundColor="Transparent" WidthRequest="24" Scale="0.7" HorizontalOptions="Start" Margin="10,0,0,0"/>
+                <Label Text="Scan" Grid.Column="1" TextColor="Black" FontSize="15" Margin="0,5,0,0" />
+                <Button Text="Aponte para o QRCode" Grid.Column="2" BackgroundColor="Transparent" Scale="1.5" TextColor="Black" BorderWidth="2" HeightRequest="35" Margin="0,-7,-125,0"/>
+            </Grid>
+
+            <Frame VerticalOptions="CenterAndExpand" HeightRequest="600" CornerRadius="10" Margin="10" BackgroundColor="#A35AF1">
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                        <GradientStop Color="#A35AF1" Offset="0.1" />
+                        <GradientStop Color="#FF8270" Offset="1.0" />
+                        <GradientStop Color="#FFAA93" Offset="0.1" />
+                        <GradientStop Color="#FFAA94" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+
+                <Grid VerticalOptions="CenterAndExpand" Margin="0,17,0,-80">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="6*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <zxing:ZXingScannerView x:Name="zxing"
+                                         VerticalOptions="FillAndExpand"/>
+                    <zxing:ZXingDefaultOverlay TopText="Aponte sua camera para o QR CODE"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
