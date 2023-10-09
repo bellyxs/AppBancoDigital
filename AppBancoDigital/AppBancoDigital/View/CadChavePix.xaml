@@ -23,15 +23,26 @@
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
-            </StackLayout>
 
+                <Button Text="Continuar Cadastro" 
+                   x:Name="continuar_cadastro"
+                   TextColor="Black"  
+                   BackgroundColor="Black"
+                   FontAttributes="Bold"
+                   WidthRequest="300"
+                   Clicked="continuar_cadastro_Clicked" 
+                   CornerRadius="15"
+                   Margin="10,20,20,10"/>   
+
+
+            </StackLayout>
             <StackLayout>
                 <Frame BackgroundColor="#f0f1f5" WidthRequest="280" CornerRadius="20" HeightRequest="100">
                     <Label>
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="O que é a chave Pix?:" FontSize="21" FontAttributes="Bold" TextColor="Black"/>
-                                <Span Text="A chave é o que te identifica no Pix. O cadastro de chave é necessario para pagar ou receber pelo pix de forma prática." FontSize="Subtitle" TextColor="Black"/>
+                                <Span Text="O que é a chave Pix?:" FontSize="19" FontAttributes="Bold" TextColor="Black"/>
+                                <Span Text="A chave é o que te identifica no Pix. O cadastro de chave é necessario para pagar ou receber pelo pix de forma prática." FontSize="18" TextColor="Black"/>
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>

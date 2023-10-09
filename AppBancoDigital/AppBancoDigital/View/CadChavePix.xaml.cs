@@ -17,12 +17,17 @@ namespace AppBancoDigital.View
             InitializeComponent();
 
             voltar.Source = ImageSource.FromResource("AppBancoDigital.Imagens.voltar.png");
-
+            continuar_cadastro.BackgroundColor = Color.FromRgba(0, 0, 0, 64);
         }
 
         private void voltar_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Pix());
+        }
+
+        private void continuar_cadastro_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }
