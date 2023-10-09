@@ -62,10 +62,18 @@
                 <StackLayout>
                     <ImageButton Source="qrcode.png" x:Name="QrCode" Clicked="QrCode_Clicked" WidthRequest="60" HeightRequest="60" BackgroundColor="#f0f1f5"
              Padding="15" CornerRadius="50"/>
-                    
+
                     <Label TextColor="Black" FontSize="14" HorizontalOptions="Center" Text="QRCode"/>
                 </StackLayout>
+
+
+                <StackLayout>
+                    <ImageButton Source="chavepix.png" x:Name="CadastroPix" Clicked="CadastroPix_Clicked" WidthRequest="60" HeightRequest="60" BackgroundColor="#f0f1f5"
+             Padding="15" CornerRadius="50"/>
+
+                <Label TextColor="Black" FontSize="15" HorizontalOptions="Center" Text="Chave"/>
             </StackLayout>
+    </StackLayout>
 
 
         </Grid>

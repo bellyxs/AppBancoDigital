@@ -20,11 +20,12 @@ namespace AppBancoDigital.View
             Transferencia.Source = ImageSource.FromResource("AppBancoDigital.Imagens.cobrar.png");
             Deposito.Source = ImageSource.FromResource("AppBancoDigital.Imagens.banco.png");
             QrCode.Source = ImageSource.FromResource("AppBancoDigital.Imagens.qrcode.png");
+            CadastroPix.Source = ImageSource.FromResource("AppBancoDigital.Imagens.chavepix.png");
         }
 
         private void btnBack(object sender, EventArgs e)
         {
-            Navigation.PopAsync();
+            Navigation.PushAsync(new PaginaInicial());
         }
 
         private void Receber_Clicked(object sender, EventArgs e)
@@ -46,6 +47,11 @@ namespace AppBancoDigital.View
         {
             Navigation.PushAsync(new PixDeposito());
 
+        }
+
+        private void CadastroPix_Clicked(object sender, EventArgs e)
+        {
+           Navigation.PushAsync(new CadChavePix());
         }
     }
 }

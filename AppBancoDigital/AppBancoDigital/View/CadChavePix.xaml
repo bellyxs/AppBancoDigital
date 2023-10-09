@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBancoDigital.View.CadChavePix">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame HasShadow="True">
+                <ImageButton Source="voltar.png" Clicked="voltar_Clicked" x:Name="voltar" WidthRequest="30" 
+                         HorizontalOptions="Start" BackgroundColor="White"/>
+            </Frame>
+            <StackLayout Margin="15,10">
+
+                <Label Text="Selecione o tipo de chave que deseja cadastrar no Pix" FontSize="18"  Margin="0,0,0,50" TextColor="Black"/>
+
+                <Picker x:Name="pickerchavepix" Title="Cadastro de Chave:">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Chave de CPF</x:String>
+                            <x:String>Chave de celular</x:String>
+                            <x:String>Chave de e-mail</x:String>
+                            <x:String>Chave aleatória</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </StackLayout>
+
+            <StackLayout>
+                <Frame BackgroundColor="#f0f1f5" WidthRequest="280" CornerRadius="20" HeightRequest="100">
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="O que é a chave Pix?:" FontSize="21" FontAttributes="Bold" TextColor="Black"/>
+                                <Span Text="A chave é o que te identifica no Pix. O cadastro de chave é necessario para pagar ou receber pelo pix de forma prática." FontSize="Subtitle" TextColor="Black"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
