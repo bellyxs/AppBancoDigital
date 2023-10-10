@@ -24,6 +24,9 @@
                     </Picker.ItemsSource>
                 </Picker>
 
+                <Label Text="Insira a chave pix:" FontSize="15" Margin="0,26,0,0" TextColor="#000000"/>
+                <Entry x:Name="txtpix" FontSize="18" BackgroundColor="Transparent"/>
+
                 <Button Text="Continuar Cadastro" 
                    x:Name="continuar_cadastro"
                    TextColor="Black"  

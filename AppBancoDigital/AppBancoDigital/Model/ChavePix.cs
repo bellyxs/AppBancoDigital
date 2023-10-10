@@ -8,7 +8,9 @@ namespace AppBancoDigital.Model
     {
         public int id { get; set; }
         public string tipo { get; set; }
-        public int chave { get; set; }
+        public string chave { get; set; }
+
+        public int id_conta { get; set; }
 
 
     }
