@@ -40,12 +40,15 @@ namespace AppBancoDigital.View
                     tipo = tipo_da_chave,
                     chave = chave_pix
                 });
-
             }
             catch (Exception ex)
             {
                 await DisplayAlert("Ops", ex.Message, "OK");
+
             }
+
+
+            
         }
     }
 }

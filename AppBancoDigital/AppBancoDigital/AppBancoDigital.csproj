@@ -136,19 +136,22 @@
     <EmbeddedResource Update="View\PaginaInicial.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Pix\Pix.xaml">
+    <EmbeddedResource Update="View\PastaPix\ListagemPix.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Pix\PixDeposito.xaml">
+    <EmbeddedResource Update="View\PastaPix\Pix.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Pix\PixEnviar.xaml">
+    <EmbeddedResource Update="View\PastaPix\PixDeposito.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Pix\PixQRCode.xaml">
+    <EmbeddedResource Update="View\PastaPix\PixEnviar.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\Pix\PixTransferencia.xaml">
+    <EmbeddedResource Update="View\PastaPix\PixQRCode.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\PastaPix\PixTransferencia.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Recarga.xaml">

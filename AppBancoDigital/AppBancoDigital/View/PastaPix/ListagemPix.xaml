@@ -1,0 +1,23 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBancoDigital.View.PastaPix.ListagemPix">
+
+
+    <ContentPage.Content>
+        <StackLayout Background="#fff">
+            <Grid RowDefinitions="27" ColumnDefinitions="*,30,*" Margin="0,30,0,10">
+                <ImageButton Source="voltar.png"  x:Name="voltar" Clicked="voltar_Clicked" BackgroundColor="Transparent" WidthRequest="24" Scale="0.7" HorizontalOptions="Start" Margin="10,0,0,0"/>
+                <Label Text="PIX" Grid.Column="1" TextColor="#A36AF2" FontSize="15" Margin="0,5,0,0" />
+                <Button Text="?" Grid.Column="2" BackgroundColor="Transparent" Scale="1.5" TextColor="#A36AF2" BorderWidth="2" HeightRequest="35" Margin="0,-7,-125,0"/>
+            </Grid>
+
+            <Label Text="Pagar com PIX" TextColor="#A36AF2" Margin="12,0,10,10" FontSize="20"/>
+            <Grid ColumnDefinitions="*,*,*" Margin="10,-10,10,-20" >
+                <Button Text="QrCode" x:Name="QRCode" Clicked="QRCode_Clicked" Grid.Column="0" HeightRequest="120" Background="#E5E7E9" CornerRadius="10" Scale="0.93"/>
+                <Button Text="Chave Pix" x:Name="ChavePix" Clicked="ChavePix_Clicked" Grid.Column="1" Background="#E5E7E9" CornerRadius="10" Scale="0.93"/>
+                <Button Text="Copia e Cola" x:Name="Copia" Clicked="Copia_Clicked" Grid.Column="2" Background="#E5E7E9" CornerRadius="10" Scale="0.93"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage> 
+    

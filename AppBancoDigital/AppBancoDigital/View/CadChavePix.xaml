@@ -45,7 +45,8 @@
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="O que é a chave Pix?:" FontSize="19" FontAttributes="Bold" TextColor="Black"/>
-                                <Span Text="A chave é o que te identifica no Pix. O cadastro de chave é necessario para pagar ou receber pelo pix de forma prática." FontSize="18" TextColor="Black"/>
+                                <Span Text="A chave é o que te identifica no Pix.
+                                            O cadastro de chave é necessario para pagar ou receber pelo pix de forma prática." FontSize="18" TextColor="Black"/>
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
