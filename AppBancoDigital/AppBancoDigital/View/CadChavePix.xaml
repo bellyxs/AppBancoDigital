@@ -11,8 +11,22 @@
             </Frame>
             <StackLayout Margin="15,10">
 
-                <Label Text="Selecione o tipo de chave que deseja cadastrar no Pix" FontSize="18"  Margin="0,0,0,50" TextColor="Black"/>
+                <Frame BackgroundColor="#f0f1f5" WidthRequest="270" CornerRadius="20" HeightRequest="70">
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Cadastro:
+                                      " FontSize="19" TextColor="Black" FontAttributes="Bold"/>
+                                <Span Text="Começe agora seu cadastro de chave pix!" FontSize="18" TextColor="Black"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Frame>
 
+                <Label Text="Cadastre-se já" FontAttributes="Bold"            
+                TextColor="Black" FontSize="20" Grid.Row="1" Margin="5,5,-0,0"/>
+                
+                <Label Text="Selecione o tipo de chave que deseja cadastrar no pix" FontSize="17" Margin="0,9,0,0" TextColor="#000000"/>
                 <Picker x:Name="pickerchavepix" Title="Cadastro de Chave:">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
@@ -24,7 +38,7 @@
                     </Picker.ItemsSource>
                 </Picker>
 
-                <Label Text="Insira a chave pix:" FontSize="15" Margin="0,26,0,0" TextColor="#000000"/>
+                <Label Text="Insira a chave pix:" FontSize="17" Margin="0,9,0,0" TextColor="#000000"/>
                 <Entry x:Name="txtpix" FontSize="18" BackgroundColor="Transparent"/>
 
                 <Button Text="Continuar Cadastro" 
@@ -35,22 +49,8 @@
                    WidthRequest="300"
                    Clicked="continuar_cadastro_Clicked" 
                    CornerRadius="15"
-                   Margin="10,20,20,10"/>   
+                   Margin="10,20,20,10"/>
 
-
-            </StackLayout>
-            <StackLayout>
-                <Frame BackgroundColor="#f0f1f5" WidthRequest="280" CornerRadius="20" HeightRequest="100">
-                    <Label>
-                        <Label.FormattedText>
-                            <FormattedString>
-                                <Span Text="O que é a chave Pix?:" FontSize="19" FontAttributes="Bold" TextColor="Black"/>
-                                <Span Text="A chave é o que te identifica no Pix.
-                                            O cadastro de chave é necessario para pagar ou receber pelo pix de forma prática." FontSize="18" TextColor="Black"/>
-                            </FormattedString>
-                        </Label.FormattedText>
-                    </Label>
-                </Frame>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

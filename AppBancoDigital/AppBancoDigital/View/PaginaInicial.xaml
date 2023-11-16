@@ -16,7 +16,7 @@
                         </StackLayout>
 
                         <StackLayout Orientation="Vertical" Padding="5">
-                            <Label Text="Olá," TextColor="White" FontSize="20" FontAttributes="Bold"/>
+                            <Label Text="Olá!" TextColor="White" FontSize="20" FontAttributes="Bold"/>
                             <Label x:Name="LblUser" FontSize="20" Text="{Binding nome}" TextColor="White" FontAttributes="Bold"/>
                         </StackLayout>
                     </StackLayout>
