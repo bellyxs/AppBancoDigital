@@ -11,9 +11,9 @@ namespace AppBancoDigital.Service
 {
     public class DataServiceChavePix : DataService
     {
-        public static async Task<object> Adicionar(ChavePix ChaveModel)
+        public static async Task<object> Adicionar(ChavePix ChavePixModel)
         {
-            string json = JsonConvert.SerializeObject(ChaveModel);
+            string json = JsonConvert.SerializeObject(ChavePixModel);
 
             string response = await PostDataToService(json, "/conta/pix/adicionar");
 
@@ -23,16 +23,6 @@ namespace AppBancoDigital.Service
 
             return obj as ChavePix;
 
-        }
-
-        public static async Task<ChavePix> Cadastrar(ChavePix cp)
-        {
-            var json_to_send = JsonConvert.SerializeObject(cp);
-
-            string json = await DataService.PostDataToService(json_to_send, "/chavepix/save");
-
-            Correntista correntista = JsonConvert.DeserializeObject<Correntista>(json);
-            return cp;
         }
 
         public static async Task<List<ChavePix>> listar(int id_conta)

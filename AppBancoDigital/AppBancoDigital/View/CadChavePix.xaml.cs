@@ -37,8 +37,8 @@ namespace AppBancoDigital.View
 
                 await DataServiceChavePix.Adicionar(new ChavePix
                 {
-                    tipo = tipo_da_chave,
-                    chave = chave_pix
+                    Tipo = tipo_da_chave,
+                    Chave = chave_pix
                 });
             }
             catch (Exception ex)

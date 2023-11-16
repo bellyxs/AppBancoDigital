@@ -6,9 +6,9 @@ namespace AppBancoDigital.Model
 {
     public class ChavePix
     {
-        public int id { get; set; }
-        public string tipo { get; set; }
-        public string chave { get; set; }
-        public int id_conta { get; set; }
+        public int Id { get; set; }
+        public string Tipo { get; set; }
+        public string Chave { get; set; }
+        public int Id_conta { get; set; }
     }
 }
